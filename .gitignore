@@ -1,0 +1,21 @@
+# Virtualenv: se reconstruye con requirements.txt (663 MB).
+.venv/
+
+# Third-party binaries: 307 MB of code this app executes with the user's
+# privileges. They are NOT distributed here on purpose — bin/SHA256SUMS is
+# versioned instead, so anyone can verify their own download against the
+# hashes this project was tested with. See SECURITY.md.
+bin/*
+!bin/SHA256SUMS
+
+# Disposable: regenerated on demand.
+cache/
+tests/out/
+tests/samples/
+
+__pycache__/
+*.py[cod]
+
+# Export scratch space. Named by tempfile.mkdtemp, cleaned up on exit, but a
+# hard kill mid-export can leave one behind.
+.swtmp_*/
